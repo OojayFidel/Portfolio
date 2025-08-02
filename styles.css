@@ -13,7 +13,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #34495e;
-    background-color: #f9f9f9;
+    background-color: #ecf2f5;
 }
 
 /* 3. Center content and add vertical spacing */
@@ -25,7 +25,12 @@ section {
     background-color: #ffffff;  /* white background for content */
     border-radius: 8px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease;
 
+}
+
+section:hover {
+  background-color: #f8fbfc; /* subtle hover effect */
 }
 
 /* 4. Headings */
@@ -35,7 +40,29 @@ h2{
     color: #2c3e50;
     margin-bottom: 0.5rem;
     border-left: 4px solid;
-    padding-left: 0.5rem;
+    padding-left: 0.75rem;
+    position: relative;
+}
+
+h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #3498db;  /* or your primary accent color */
+  border-radius: 2px;
+}
+
+.profile-pic {
+  display: block;              /* Treat as a block so margin auto works */
+  width: 150px;                /* Adjust to taste */
+  height: 150px;               /* Keep square for perfect circle */
+  object-fit: cover;           /* Crop to fill the box without distortion */
+  border-radius: 50%;          /* Makes it a circle */
+  margin: 0 auto 1rem;         /* Center horizontally + space below */
+  border: 2px solid #3498db;   /* Optional accent border */
 }
 
 /* 5. Paragraphs */
