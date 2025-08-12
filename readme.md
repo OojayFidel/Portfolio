@@ -1,7 +1,7 @@
 # Jonathan Odey’s Portfolio
 A clean, responsive HTML/CSS site showcasing my skills, projects, and contact form.
 
-**Demo:** [Live site](https://oojayfidel.github.io/portfolio/)
+**Demo:** [Live site](https://oojayfidel.github.io/Portfolio/)
 
 ## Table of Contents  
 - [Features](#features)  
